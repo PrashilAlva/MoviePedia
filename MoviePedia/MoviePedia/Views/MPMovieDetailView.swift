@@ -278,7 +278,7 @@ struct MPMovieDetailView: View {
             self.currencyFormatter.locale = Locale(identifier: "en_US")
             await renderMovieDetails()
         }
-        .onChange(of: isReloadRequested) { _, newStatus in
+        .onChange(of: isReloadRequested) { newStatus in
             if newStatus {
                 self.appState = .loading
                 Task {
