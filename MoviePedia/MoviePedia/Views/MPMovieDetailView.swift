@@ -96,7 +96,6 @@ struct MPMovieDetailView: View {
                                         .font(.system(size: 13))
                                     HStack {
                                         Image(systemName: "star.fill")
-                                            .padding(.trailing)
                                         Text(String(format: "%.2f", movieSelected.voteAverage))
                                             .fontWeight(.bold)
                                         Text("/10")
