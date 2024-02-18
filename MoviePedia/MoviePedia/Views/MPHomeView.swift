@@ -19,7 +19,11 @@ struct MPHomeView: View {
             MPListView(movieList: latestMovies, pageTitle: "Latest")
                 .padding()
                 .tabItem {
-                    Label("Latest", systemImage: "movieclapper")
+                    if #available(iOS 17, *) {
+                        Label("Latest", systemImage: "movieclapper")
+                    } else {
+                        Label("Latest", systemImage: "calendar")
+                    }
                 }
                 .tag(0)
             MPListView(movieList: popularMovies, pageTitle: "Popular")
