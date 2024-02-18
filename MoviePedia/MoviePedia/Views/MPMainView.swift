@@ -29,7 +29,7 @@ struct MPMainView: View {
         .task {
             await setUpData()
         }
-        .onChange(of: isReloadRequested) { _ , newStatus in
+        .onChange(of: isReloadRequested) { newStatus in
             if newStatus {
                 self.appState = .loading
                 Task {
