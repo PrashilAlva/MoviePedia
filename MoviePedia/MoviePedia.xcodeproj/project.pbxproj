@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F5404512EACAFFE000C5BA0 /* MPNetworker in Frameworks */ = {isa = PBXBuildFile; productRef = 2F5404502EACAFFE000C5BA0 /* MPNetworker */; };
 		4B2E8BA32B7B4A4E006B490A /* MPNetworkErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E8BA22B7B4A4E006B490A /* MPNetworkErrorView.swift */; };
 		4B2E8BA62B7B4DCD006B490A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E8BA52B7B4DCD006B490A /* AppState.swift */; };
 		4B3CCC582B73C4E500E9E7A4 /* MoviePediaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CCC572B73C4E500E9E7A4 /* MoviePediaApp.swift */; };
@@ -84,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BE108762B77797D00E9A1E7 /* MPNetworker in Frameworks */,
+				2F5404512EACAFFE000C5BA0 /* MPNetworker in Frameworks */,
 				4B73D9102B7BA82E00F1122A /* MPNetworker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +221,7 @@
 			packageProductDependencies = (
 				4BE108752B77797D00E9A1E7 /* MPNetworker */,
 				4B73D90F2B7BA82E00F1122A /* MPNetworker */,
+				2F5404502EACAFFE000C5BA0 /* MPNetworker */,
 			);
 			productName = MoviePedia;
 			productReference = 4B3CCC542B73C4E500E9E7A4 /* MoviePedia.app */;
@@ -293,6 +296,7 @@
 			);
 			mainGroup = 4B3CCC4B2B73C4E500E9E7A4;
 			packageReferences = (
+				2F54044F2EACAFFE000C5BA0 /* XCRemoteSwiftPackageReference "MPNetworker" */,
 			);
 			productRefGroup = 4B3CCC552B73C4E500E9E7A4 /* Products */;
 			projectDirPath = "";
@@ -677,7 +681,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		2F54044F2EACAFFE000C5BA0 /* XCRemoteSwiftPackageReference "MPNetworker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PrashilAlva/MPNetworker.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		2F5404502EACAFFE000C5BA0 /* MPNetworker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F54044F2EACAFFE000C5BA0 /* XCRemoteSwiftPackageReference "MPNetworker" */;
+			productName = MPNetworker;
+		};
 		4B73D90F2B7BA82E00F1122A /* MPNetworker */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MPNetworker;
